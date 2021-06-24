@@ -1,7 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background-color: cadetblue;
+}
+
 .navbar-expand-lg .navbar-collapse {
     justify-content: flex-end;
 }
 
-.header_1 {
+.header_1,
+.header_2 {
     text-align: center;
+}
+
+
+.main {
+    width: auto;
+    height: auto;
+    background-color: rgb(14, 14, 4);
+}
+
+.footer {
+    width: 100%;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+img {
+    margin: 10px;
+    width: 100%;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+}
+
+.footer h5 {
+    text-align: right;
+    padding: 10px;
+    color: black;
 }
