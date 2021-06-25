@@ -1,51 +1,90 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+@media only screen and (max-width: 600px) {
+    .col {
+        flex: 1 1 30%;
+    }
+}
+
+
+@media only screen and (max-width: 400px) {
+    .col {
+        flex: 1 1 50%;
+    }
+
 }
 
 
 body {
-    background-color: cadetblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400px;
 }
 
 .navbar-expand-lg .navbar-collapse {
     justify-content: flex-end;
 }
 
-.header_1,
-.header_2 {
+
+.header_1 {
     text-align: center;
 }
 
+.header_2 {
+    text-align: center;
+    padding: 10px;
+}
+
+
+h3 {
+    text-align: center;
+    padding: 20px;
+}
 
 .main {
     width: auto;
-    height: auto;
-    background-color: rgb(14, 14, 4);
+    height: 85vh;
+    background-color: rgb(127, 159, 172);
+    position: relative;
 }
 
 .footer {
     width: 100%;
+    height: 5vh;
 }
 
-.flex-container {
+.flex_cont {
     display: flex;
-    justify-content: space-around;
-
+    flex-direction: column;
+    justify-content: center;
 }
+
 
 img {
-    margin: 10px;
     width: 100%;
+    height: auto;
+    margin: 30px 0;
 }
 
 footer {
-    position: fixed;
     bottom: 0;
+    background-color: whitesmoke;
+    height: 5vh;
 }
 
 .footer h5 {
     text-align: right;
     padding: 10px;
     color: black;
+}
+
+.card-text {
+    text-align: center;
+    color: blue;
+    font-size: 20px;
+
 }
